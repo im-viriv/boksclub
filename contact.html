@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="contact.css" />
+		<link rel="stylesheet" href="global.css" />
+		<link rel="preconnect" href="https://fonts.bunny.net" />
+		<link href="https://fonts.bunny.net/css?family=praise:400" rel="stylesheet" />
+
+		<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.2/dist/iconify-icon.min.js"></script>
+		<title>De Counter</title>
+	</head>
+	<body>
+		<header>
+			<a class="branding" href="./index.html">
+				<img src="./public/logo.png" alt="" />
+				<p>De Counter</p>
+			</a>
+			<nav>
+				<a href="./index.html">Home</a>
+				<a href="./proefles.html">Proefles</a>
+				<a href="./tarieven.html">Tarieven</a>
+				<a class="active" href="./contact.html">Contact</a>
+			</nav>
+		</header>
+		<main>
+			<div class="hero">
+				<div class="text">
+					<h1>
+						Fit worden en meer zelfvertrouwen krijgen? Neem boksles bij The Counter!
+					</h1>
+					<p>
+						Wil jij leren boksen? Dan ben je hier aan het juiste adres. Bij The
+						Counter kun je lekker 1 op 1 trainen in een ongedwongen sfeer en niemand
+						die je bekijkt. Heb je geen vervoer of heb je kinderen thuis die nog niet
+						alleen kunnen blijven? Geen probleem, dan komen we gewoon naar jou!
+					</p>
+				</div>
+			</div>
+			<div class="info">
+				<div class="left">
+					<img src="./public/wedstrijd2.jpg" alt="people training" />
+				</div>
+				<div class="right">
+					<h2>Neem contact op</h2>
+					<form action="./contact.html" method="post">
+						<input required placeholder="Naam" id="name" type="text" />
+						<input
+							type="tel"
+							id="phone"
+							name="phone"
+							placeholder="Telefoonnummer"
+							pattern="[+]{31}[0-9]{11,14}"
+							required
+						/>
+						<input required placeholder="E-Mail" id="email" type="email" />
+						<textarea required placeholder="Vraag/Opmerking" name="question" id="question" cols="30" rows="5"></textarea>
+						<label
+							><input type="checkbox" name="agreed" id="agreed" /> Ik ga akkoord met de
+							verwerking van mijn gegevens</label
+						>
+						<button type="submit">
+							<iconify-icon width="20px" icon="lucide:send"></iconify-icon>
+							Versturen
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="socials">
+				<a href="" target="_blank">
+					<iconify-icon
+						width="33px"
+						icon="ph:instagram-logo-fill"
+						nog
+					></iconify-icon> </a
+				><a href="" target="_blank">
+					<iconify-icon width="33px" icon="ic:baseline-email"></iconify-icon> </a
+				><a href="" target="_blank">
+					<iconify-icon
+						width="33px"
+						icon="ic:baseline-local-phone"
+					></iconify-icon> </a
+				><a href="" target="_blank">
+					<iconify-icon width="33px" icon="ic:baseline-facebook"></iconify-icon>
+				</a>
+			</div>
+			<div class="adress">
+				<p>balkweg 1, 1234AA, Tilburg</p>
+			</div>
+		</footer>
+	</body>
+</html>
